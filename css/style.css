@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+nav {
+  background-color: black;
+  position: relative;
+  width: 50%;
+  left: 25%;
+  margin: 10px 0 0 0;
+  border-radius: 20px;
+  animation-name: nav;
+  animation-duration: 1s;
+}
+
+@keyframes nav {
+  0% {
+    inset: -80px 0 0 25%;
+  }
+
+  100% {
+    inset: 0 0 0 25%;
+  }
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li a {
+  font-size: 25px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.main-index {
+  position: absolute;
+  inset: 45% 0 0 7%;
+  animation-name: main-index;
+  animation-duration: 1s;
+}
+
+@keyframes main-index {
+  0% {
+    inset: 45% 0 0 -700px;
+  }
+}
+
+.main-index h1 {
+  text-transform: uppercase;
+  color: white;
+  background-color: #415da7;
+  width: 700px;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  font-size: 150px;
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.main-index h2 {
+  text-transform: uppercase;
+  color: white;
+  background-color: #e99dcb;
+  width: 600px;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  font-size: 100px;
+  position: absolute;
+  left: 50px;
+  top: 60px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.main-musica h1 {
+  text-transform: uppercase;
+  color: white;
+  margin: 150px 150px 0 150px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.main-musica h2 {
+  text-transform: lowercase;
+  color: #e99dcb;
+  margin: 0 150px 150px 150px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.about {
+  background-color: black;
+  position: relative;
+  inset: 400px 0 0 0;
+  width: 100%;
+  height: 500px;
+}
+
+.index-gif {
+  position: absolute;
+  width: 30%;
+  inset: 30% 0 0 56%;
+  border-radius: 100%;
+  transform: rotate(40deg);
+  box-shadow: -50px 0#415da7, 50px 0 #e99dcb;
+  border-right: solid 50px #415da7;
+  border-left: solid 50px #e99dcb;
+  animation-name: index-gif;
+  animation-duration: 2s;
+  z-index: -1;
+}
+
+@keyframes index-gif {
+  0% {
+    inset: 0 0 0 40%;
+    border-left: solid 0px #415da7;
+    border-right: solid 0px #e99dcb;
+  }
+}
+
+.banner-index {
+  background-color: #f4d8d5;
+  position: absolute;
+  width: 100%;
+  z-index: -2;
+  transform-origin: top right;
+  transform: skewY(90deg);
+  margin: 0;
+  padding: 0;
+}
+
+.anchor-active {
+  color: #e99dcb;
+}
+
+.spotify-player {
+  position: relative;
+  width: 32%;
+  height: 380px;
+  border-radius: 20px;
+  margin: 11px;
+  animation-name: spotify-player;
+  animation-duration: 3s;
+}
+
+@keyframes spotify-player {
+  0% {
+    inset: 1000px 0 0 0;
+  }
+
+  100% {
+    inset: 0;
+  }
+}
+
+.shadow-pink {
+  box-shadow: -5px 5px 10px 10px #e99dcb;
+}
+
+.shadow-blue {
+  box-shadow: -5px 5px 10px 10px #415da7;
+}
+
+footer {
+  color: #e99dcb;
+  margin: 95px 0 10px 15px;
+  font-size: 10px;
+  font-family: sans-serif
+}
+
+a {
+  color: #e99dcb;
+}
+
+.galeria-img {
+  margin: 5px;
+  border: solid;
+  border-radius: 20px;
+  animation-name: galeria-img;
+  animation-duration: 2s;
+}
+
+@keyframes galeria-img {
+  0% {
+    filter: brightness(0);
+  }
+}
+
+#margin-top-bottom-20px {
+  margin: 200px;
+}
+
+.h1-bluebg.margin-top-20px {
+  margin-top: 20px;
+}
+
+.h1-pinkbg.margin-top-20px {
+  margin-top: 20px;
+}
+
+.h1-pinkbg {
+  text-transform: uppercase;
+  position: relative;
+  background-color: #e99dcb;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  padding: 20px;
+  animation-name: drop-from-top-right;
+  animation-duration: 1s;
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.h1-bluebg {
+  text-transform: uppercase;
+  position: relative;
+  background-color: #415da7;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  padding: 20px;
+  margin: 0;
+  animation-name: drop-from-top-left;
+  animation-duration: 1s;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.h2-pinkbg {
+  background-color: #e99dcb;
+  position: relative;
+  color: white;
+  padding: 15px;
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  animation-name: slide-from-left-to-right;
+  animation-duration: 1s;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.h2-bluebg {
+  background-color: #415da7;
+  position: relative;
+  color: white;
+  padding: 15px;
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  animation-name: slide-from-right-to-left;
+  animation-duration: 1s;
+  font-family: 'Bebas Neue', cursive;
+}
+
+@keyframes slide-from-left-to-right {
+  0% {
+    left: -500px;
+  }
+
+  100% {
+    inset: 0;
+  }
+}
+
+@keyframes slide-from-right-to-left {
+  0% {
+    left: 500px;
+  }
+
+  100% {
+    inset: 0;
+  }
+}
+
+@keyframes drop-from-top-right {
+  0% {
+    inset: -100px;
+  }
+
+  100% {
+    inset: 0;
+  }
+}
+
+@keyframes drop-from-top-left {
+  0% {
+    inset: -100px 0 100px 100px;
+  }
+
+  100% {
+    inset: 0;
+  }
+}
+
+#banner-musica {
+  position: absolute;
+  margin: 0;
+  inset: 0;
+  background-color: #415da7;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  animation-name: banner-musica;
+  animation-duration: 3s;
+}
+
+@keyframes banner-musica {
+  0% {
+    background-color: white;
+    width: 100%;
+    height: 1200px;
+    z-index: -2;
+    transform-origin: top right;
+    transform: skewY(40deg);
+    margin: 0;
+    padding: 0;
+  }
+
+  100% {}
+}
+
+.galeria.margin-top-20px {
+  margin-top: 20px;
+}
+
+.h3-bluebg {
+  background-color: #415da7;
+  position: relative;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+  width: 50%;
+  left: 25%;
+  margin: 30px 0 30px 0;
+  border-radius: 20px;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+}
+
+.h3-pinkbg {
+  background-color: #e99dcb;
+  position: relative;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+  width: 50%;
+  margin: 30px 0 30px 0;
+  left: 25%;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.armatulong-img {
+  border: solid;
+  position: relative;
+  left: 540px;
+  width: 800px;
+}
+
+.no-animation {
+  animation-name: none;
+}
+
+p {
+  margin: 0;
+}
